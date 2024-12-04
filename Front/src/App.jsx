@@ -8,6 +8,7 @@ const App = () => {
     <Router>
     <div className="app">
       {/* Contenido principal */}
+      {/*a*/}
       <div className="content">
         <Routes>
           {/* Redirige al Login al acceder a la página principal */}
