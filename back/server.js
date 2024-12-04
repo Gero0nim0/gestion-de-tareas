@@ -14,7 +14,8 @@ const corsOptions = {
    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'], // Headers permitidos
 
- };
+ }; 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors(corsOptions)); // Para permitir acceso desde el frontend
 // Conexión a la base de datos
 mongoose.connect(process.env.MONGODB_URI)
