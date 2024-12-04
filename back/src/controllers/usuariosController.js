@@ -1,5 +1,5 @@
 const Usuario = require('../models/usuarios'); // Importar el modelo
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 // Registro de usuario
 exports.register = async (req, res) => {
@@ -13,7 +13,7 @@ exports.register = async (req, res) => {
         }
 
         // Encripta la contraseña
-        const hashedPassword = await bcrypt.hash(password, 10);
+        // const hashedPassword = await bcrypt.hash(password, 10);
 
         // Crea un nuevo usuario
         const newUser = new Usuario({ username, email, password: hashedPassword });
