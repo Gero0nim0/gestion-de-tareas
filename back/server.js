@@ -28,7 +28,7 @@ app.use('/api/tareas', require('./src/routes/tareasRoutes')); // Rutas para las 
 app.use('/api/usuarios', require('./src/routes/usuariosRoutes')); // Rutas para los usuarios
 
 // Iniciar servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     connectDB();
     console.log(`Servidor corriendo en el puerto ${PORT}`);
