@@ -1,0 +1,42 @@
+/* Agregar flex a body para centrar el login */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #09090b;
+  }
+  
+  .login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container > div {
+    max-width: 400px;
+    padding: 2rem 3rem;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+  }
+
+  .textoCentrado{
+    text-align: center;
+  }
+
+  .login-container button {
+    background-color: #3b82f6;
+    width: 100%;
+  }
+
+  .login-container a {
+    color: #3b82f6;
+    text-decoration: underline;
+  }
+  
+  .login-bottom {
+    text-align: center;
+  }
